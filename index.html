@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Guesser - Can you do it?</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road:500&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="processing-overlay">
+      <div class="processing scale-out">You got it Right!</div>
+    </header>
+    <main>
+      <div class="header">
+        <div class="flex">
+          <h1>Can you guess the color?</h1>
+        </div>
+        <h2 class="color-guess">Color will be displayed here</h2>
+      </div>
+      <h2 class="remaining-guess hide">
+        <span class="guess-number">x</span>&nbsp;Guess Left
+      </h2>
+
+      <div class="startup">
+        <div class="flex">
+          <div class="level-box easy-box">Easy</div>
+          <div class="level-box medium-box">Medium</div>
+          <div class="level-box hard-box">Hard</div>
+        </div>
+      </div>
+
+      <div class="container hide">
+        <!-- <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div> -->
+      </div>
+      <div class="game-over">
+        <div class="message" style="text-align: center;">Game Message</div>
+        <div class="message-score" style="text-align: center;margin-top:12px;">Your Score :</div>
+        <button class="retry">Play Again</button>
+      </div>
+    </main>
+    <script type="text/javascript" src="pallete.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
